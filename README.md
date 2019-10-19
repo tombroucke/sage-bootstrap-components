@@ -6,15 +6,29 @@ You can help with adding components by creating a pull request.
 
 ## Installation
 
-You can install the package via composer:
+1. Install the package via composer:
 
-```bash
-composer require tombroucke/sage-bootstrap-components
-```
+	```bash
+	composer require tombroucke/sage-bootstrap-components
+	```
+
+2. Add the bootstrap components directory
+
+	Add the components directory in yourthemename/config/view.php so your $paths array looks like this
+	
+	```php
+	'paths' => [
+        get_theme_file_path().'/resources/views',
+        get_parent_theme_file_path().'/resources/views',
+        get_parent_theme_file_path().'/vendor/tombroucke/sage-bootstrap-components/resources',
+    ],
+	```
+
 
 ## Usage
 
 Examples:
+
 ```blade
 @component('components.modal')
     This is the content of the modal

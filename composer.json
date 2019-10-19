@@ -17,8 +17,5 @@
     ],
     "require": {
         "php": ">=7.1"
-    },
-    "autoload": {
-    "files": ["sage-bootstrap-components.php"]
-  }
+    }
 }
