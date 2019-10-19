@@ -1,6 +1,4 @@
-<div
-    class="card {{ $class ?? '' }}"
->
+<div class="card {{ $class ?? '' }}">
     @isset($header)
         <div class="card-header">
             {!! $header !!}

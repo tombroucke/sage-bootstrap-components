@@ -1,10 +1,3 @@
-<span
-    class="
-        badge
-        badge-{{ $type }}
-        {{ $class ?? '' }}
-        @istrue($pill, 'badge-pill')
-    "
->
+<span class="badge badge-{{ $type }} {{ $class ?? '' }} {{ $pill ?? 'badge-pill' }}">
     {{ $slot }}
 </span>
