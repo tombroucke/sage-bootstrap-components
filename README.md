@@ -20,7 +20,7 @@ You can help with adding components by creating a pull request.
 	'paths' => [
         get_theme_file_path().'/resources/views',
         get_parent_theme_file_path().'/resources/views',
-        get_parent_theme_file_path().'/vendor/tombroucke/sage-bootstrap-components/resources',
+        get_parent_theme_file_path().'/vendor/tombroucke/sage-bootstrap-components/resources/views',
     ],
 	```
 
