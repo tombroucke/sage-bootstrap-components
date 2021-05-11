@@ -1,6 +1,6 @@
 {
     "name": "tombroucke/sage-bootstrap-components",
-    "description": "Bootstrap components for Sage",
+    "description": "Bootstrap 4 components for Sage",
     "keywords": [
         "tombroucke",
         "sage-bootstrap-components"
@@ -16,6 +16,18 @@
         }
     ],
     "require": {
-        "php": ">=7.1"
+      "roots/acorn": "*"
+    },
+    "autoload": {
+      "psr-4": {
+        "Otomaties\\Sage\\": "src/"
+      }
+    },
+    "extra": {
+      "acorn": {
+        "providers": [
+          "Otomaties\\SageBootstrapComponents\\SageBootstrapComponentsServiceProvider"
+        ]
+      }
     }
 }
