@@ -269,7 +269,7 @@ A toast needs some javascript:
 ```javascript
 import {Toast} from 'bootstrap';
 
-const trigger = document.document.getElementById('js-trigger-toast-liveToast');
+const trigger = document.getElementById('js-trigger-toast-liveToast');
 
 trigger.addEventListener('click', function(){
     const el = new Toast(document.getElementById('liveToast'));
