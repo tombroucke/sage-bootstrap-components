@@ -1,9 +1,10 @@
-<div {{ $attributes->merge(['class' => $classes]) }}>
+<div {{ $attributes->merge(['class' => $classes]) }} role="alert">
+
   @if($dismissible)
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-      </button>
+      <x-button.close dismiss="alert" />
   @endif
 
   {!! $message ?? $slot !!}
+
 </div>
+

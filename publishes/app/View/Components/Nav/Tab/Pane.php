@@ -6,9 +6,9 @@ use Roots\Acorn\View\Component;
 
 class Pane extends Component
 {
-    public $id;
+    public $id = '';
 
-    public $show;
+    public $show = false;
 
     /**
      * Create a new component instance.

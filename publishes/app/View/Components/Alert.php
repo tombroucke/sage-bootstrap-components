@@ -49,6 +49,11 @@ class Alert extends Component
         return $this->view('components.alert');
     }
 
+    /**
+     * Element classes
+     *
+     * @return string
+     */
     public function classes()
     {
         $classes = [];

@@ -1,24 +1,21 @@
 <?php
 
-namespace App\View\Components\Nav\Tab;
+namespace App\View\Components\Breadcrumb;
 
 use Roots\Acorn\View\Component;
 
-class Link extends Component
+class Item extends Component
 {
-
-    public $pane = '';
-
-    public $active = false;
-
+    public $href;
+    public $active;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $pane, bool $active = false)
+    public function __construct($href = false, $active = false)
     {
-        $this->pane = $pane;
+        $this->href = $href;
         $this->active = $active;
     }
 
@@ -29,6 +26,6 @@ class Link extends Component
      */
     public function render()
     {
-        return $this->view('components.nav.tab.link');
+        return $this->view('components.breadcrumb.item');
     }
 }

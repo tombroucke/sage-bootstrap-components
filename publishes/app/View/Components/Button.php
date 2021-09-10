@@ -31,4 +31,14 @@ class Button extends Component
     {
         return $this->view('components.button');
     }
+
+    /**
+     * Element classes
+     *
+     * @return string
+     */
+    public function classes()
+    {
+        return 'btn btn-' . $this->theme;
+    }
 }

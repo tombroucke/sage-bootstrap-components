@@ -1,3 +1,3 @@
-<{{ $tag }} {{ $attributes->merge(['class' => 'btn btn-' . $theme]) }}>
+<{{ $tag }} {{ $attributes->merge(['class' => $classes]) }}>
   {{ $slot }}
 </{{ $tag }}>

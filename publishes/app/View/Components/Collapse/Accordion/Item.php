@@ -6,13 +6,32 @@ use Roots\Acorn\View\Component;
 
 class Item extends Component
 {
-
+    /**
+     * Accordion ID
+     *
+     * @var string
+     */
     public $accordionId = '';
 
+    /**
+     * Item ID
+     *
+     * @var string
+     */
     public $id = '';
 
-    public $show;
+    /**
+     * Show this item
+     *
+     * @var boolean
+     */
+    public $show = false;
 
+    /**
+     * Heading ID
+     *
+     * @var string
+     */
     public $headingId = '';
 
     /**
@@ -29,7 +48,6 @@ class Item extends Component
         $this->id = $id ?: 'collapse-' . $uniqueId;
         $this->headingId = $headingId ?: 'heading-' . $uniqueId;
     }
-
 
     /**
      * Get the view / contents that represent the component.

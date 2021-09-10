@@ -4,21 +4,22 @@ namespace App\View\Components;
 
 use Roots\Acorn\View\Component;
 
-class Badge extends Component
+class Toast extends Component
 {
 
     public $theme = '';
-    public $pill;
+
+    public $color = '';
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($theme = 'primary', $pill = false)
+    public function __construct($theme = false, $color = false)
     {
         $this->theme = $theme;
-        $this->pill = $pill;
+        $this->color = $color;
     }
 
     /**
@@ -28,7 +29,7 @@ class Badge extends Component
      */
     public function render()
     {
-        return $this->view('components.badge');
+        return $this->view('components.toast');
     }
 
     /**
@@ -37,11 +38,12 @@ class Badge extends Component
      * @return string
      */
     public function classes() {
-        $classes = [];
-        $classes[] = 'badge';
-        $classes[] = 'bg-' . $this->theme;
-        if ($this->pill) {
-            $classes[] = 'rounded-pill';
+        $classes = ['toast'];
+        if ($this->theme) {
+            $classes[] = 'bg-' . $this->theme;
+        }
+        if ($this->color) {
+            $classes[] = 'text-' . $this->color;
         }
         return implode(' ', $classes);
     }
