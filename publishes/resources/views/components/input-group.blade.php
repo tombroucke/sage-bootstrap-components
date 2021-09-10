@@ -8,7 +8,7 @@
     <span class="input-group-text">{{ $start }}</span>
   @endif
 
-  {{ $content }}
+  {{ $slot }}
 
   @if(isset($end))
     <span class="input-group-text">{{ $end }}</span>

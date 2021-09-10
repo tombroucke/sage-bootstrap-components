@@ -115,17 +115,17 @@ Examples:
 
 ### Input group
 ```php
-<x-inputgroup label="Amount">
+<x-input-group label="Amount">
   @slot('start')
     $
   @endslot
-  @slot('content')
-    <input type="text" class="form-control" aria-label="Amount">
-  @endslot
+  
+  <input type="text" class="form-control" aria-label="Amount">
+    
   @slot('end')
     .00
   @endslot
-</x-inputgroup>
+</x-input-group>
 ```
 
 
