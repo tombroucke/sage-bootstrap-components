@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\Breadcrumb;
+namespace App\View\Components\Toast;
 
 use Roots\Acorn\View\Component;
 
