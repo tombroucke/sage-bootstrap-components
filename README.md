@@ -231,7 +231,7 @@ Examples:
 
 ### Tabs
 ```php
-<x-nav.tabs>
+<x-nav.tabs type="pills"> {{-- Default type is tabs --}}
 	<x-slot name="nav">
 		<x-nav.tab.link pane="home" active>
 			Home

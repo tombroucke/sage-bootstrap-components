@@ -1,4 +1,4 @@
-<ul class="nav nav-tabs" role="tablist">
+<ul class="nav nav-{{ $type ?? 'tabs' }}" role="tablist">
   {{ $nav }}
 </ul>
 <div class="tab-content">
