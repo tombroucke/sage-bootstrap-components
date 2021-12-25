@@ -1,4 +1,4 @@
-<nav aria-label="{!! $label ?? __('Page navigation', 'sage') !!}">
+<nav aria-label="{!! esc_attr($label ?? __('Page navigation', 'sage')) !!}">
   <ul {{ $attributes->merge(['class' => 'pagination']) }}>
     {{ $slot }}
   </ul>
