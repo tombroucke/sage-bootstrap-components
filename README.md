@@ -10,7 +10,7 @@ Install the composer package (in the theme folder).
 
 
 ```bash
-composer require tombroucke/sage-bootstrap-components
+composer require tombroucke/sage-bootstrap-components --dev
 ```
 Remove defaults app/View/Components/Alert.php & resources/views/components/alert.blade.php
 Publish the components to app/View/Components and resources/views/components.
