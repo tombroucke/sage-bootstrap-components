@@ -6,7 +6,6 @@ use Roots\Acorn\View\Component;
 
 class Toast extends Component
 {
-
     public $theme = '';
 
     public $color = '';
@@ -25,7 +24,7 @@ class Toast extends Component
     /**
      * Get the view / contents that represent the component.
      *
-     * @return \Illuminate\View\View|string
+     * @return \Illuminate\Contracts\View\View|\Closure|string
      */
     public function render()
     {
@@ -37,7 +36,8 @@ class Toast extends Component
      *
      * @return string
      */
-    public function classes() {
+    public function classes()
+    {
         $classes = ['toast'];
         if ($this->theme) {
             $classes[] = 'bg-' . $this->theme;

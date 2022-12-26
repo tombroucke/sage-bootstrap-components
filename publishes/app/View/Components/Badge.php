@@ -6,7 +6,6 @@ use Roots\Acorn\View\Component;
 
 class Badge extends Component
 {
-
     public $theme = '';
     public $pill;
 
@@ -24,7 +23,7 @@ class Badge extends Component
     /**
      * Get the view / contents that represent the component.
      *
-     * @return \Illuminate\View\View|string
+     * @return \Illuminate\Contracts\View\View|\Closure|string
      */
     public function render()
     {
@@ -36,7 +35,8 @@ class Badge extends Component
      *
      * @return string
      */
-    public function classes() {
+    public function classes()
+    {
         $classes = [];
         $classes[] = 'badge';
         $classes[] = 'bg-' . $this->theme;

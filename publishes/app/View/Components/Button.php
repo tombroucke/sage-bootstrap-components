@@ -6,7 +6,6 @@ use Roots\Acorn\View\Component;
 
 class Button extends Component
 {
-
     public $tag = '';
 
     public $theme = '';
@@ -25,7 +24,7 @@ class Button extends Component
     /**
      * Get the view / contents that represent the component.
      *
-     * @return \Illuminate\View\View|string
+     * @return \Illuminate\Contracts\View\View|\Closure|string
      */
     public function render()
     {

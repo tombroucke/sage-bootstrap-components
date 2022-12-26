@@ -29,5 +29,19 @@
           "Otomaties\\SageBootstrapComponents\\SageBootstrapComponentsServiceProvider"
         ]
       }
+    },
+    "scripts": {
+      "lint": [
+        "phpcs --extensions=php --standard=PSR12 publishes/app"
+      ],
+      "lint-fix": [
+        "phpcbf --extensions=php --standard=PSR12 publishes/app"
+      ],
+      "test": [
+        "vendor/bin/phpstan analyze publishes/app --memory-limit=512M"
+      ]
+    },
+    "require-dev": {
+        "szepeviktor/phpstan-wordpress": "^1.1"
     }
 }

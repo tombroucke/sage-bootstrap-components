@@ -6,7 +6,6 @@ use Roots\Acorn\View\Component;
 
 class Checkbox extends Component
 {
-
     public $name = '';
 
     public $value = '';
@@ -28,12 +27,18 @@ class Checkbox extends Component
         $this->switch = $switch;
     }
 
+    /**
+     * Get the view / contents that represent the component.
+     *
+     * @return \Illuminate\Contracts\View\View|\Closure|string
+     */
     public function render()
     {
-        return view('components.checkbox');
+        return $this->view('components.checkbox');
     }
 
-    public function id() {
+    public function id()
+    {
         $id = $this->name;
         if ($this->value) {
             $id .= '-' . $this->value;

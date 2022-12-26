@@ -6,7 +6,6 @@ use Roots\Acorn\View\Component;
 
 class Radio extends Component
 {
-
     public $name = '';
 
     public $value = '';
@@ -34,8 +33,13 @@ class Radio extends Component
         return $id;
     }
 
+    /**
+     * Get the view / contents that represent the component.
+     *
+     * @return \Illuminate\Contracts\View\View|\Closure|string
+     */
     public function render()
     {
-        return view('components.radio');
+        return $this->view('components.radio');
     }
 }
