@@ -25,6 +25,12 @@ Examples:
 
 
 ### Accordion
+
+An accordion needs some javascript:
+```javascript
+import { Collapse } from 'bootstrap'; // eslint-disable-line no-unused-vars
+```
+
 ```php
 <x-collapse.accordion id="my-accordion">
   <!-- Collapse.accordion.item -->
@@ -145,6 +151,12 @@ Examples:
 
 
 ### Modal
+
+A modal needs some javascript:
+```javascript
+import { Modal } from 'bootstrap'; // eslint-disable-line no-unused-vars
+```
+
 ```php
 <x-modal id="my-modal">
 	<x-slot name="title">
@@ -167,6 +179,12 @@ Examples:
 
 
 ### Offcanvas
+
+An offcanvas element needs some javascript:
+```javascript
+import { Offcanvas } from 'bootstrap'; // eslint-disable-line no-unused-vars
+```
+
 ```php
 <x-offcanvas type="start" name="offcanvas-navigation">
   @slot('header')
