@@ -2,7 +2,7 @@
 
 namespace Otomaties\SageBootstrapComponents;
 
-use Roots\Acorn\ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
 class SageBootstrapComponentsServiceProvider extends ServiceProvider
 {
